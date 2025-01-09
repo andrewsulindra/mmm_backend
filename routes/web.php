@@ -24,7 +24,7 @@ Route::group(['middleware' => ['auth:web']], function () {
     Route::get('resetpassword/{users}', 'UsersController@resetpassword');
 
     //DASHBOARD
-    Route::get('/', 'HomeController@index')->name('home');
+    // Route::get('/', 'HomeController@index')->name('home');
     Route::get('/home', 'HomeController@index')->name('home');
 
     //ROLE AND PERMISSION
